@@ -1,0 +1,68 @@
+* {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* About me */
+
+.profile-pic:hover {
+    animation-name: pp-anim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes pp-anim {
+    0% { 
+        transform: scale(1);
+    }
+    30% {
+        box-shadow: 1px 1px slategray;
+    }
+    50% {
+        box-shadow: 1px 1px gray;
+        transform: scale(1.01);
+        border-radius:10%
+    }
+    100% {
+        transform: scale(1.02);
+        box-shadow: 1px 1px gainsboro;
+        border-radius:0%
+    }
+}
+
+.profile-pic {
+    border-radius: 20%;
+}
+
+.about {
+    background-color: rgb(29, 46, 46);
+    border-radius: 10px;
+    color:azure;
+    box-shadow:  2px 2px 2px black;
+}
+.hover-fx {
+    background-color:aliceblue;
+    box-shadow: 1px 1px 2px black;
+}
+
+.hover-fx:hover {
+    animation-name: hfx-anim;
+    animation-duration:1s;
+}
+
+@keyframes hfx-anim {
+    0% {
+        background-color:aliceblue;
+    }
+    100% {
+        background-color: azure;
+    }
+}
+
+/* Games */
+.gamelist-container {
+    border-radius: 1%;
+}
+
+.game-container {
+    background-color: rgb(87, 101, 139);
+    border-radius: 5%;
+}
